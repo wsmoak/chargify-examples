@@ -1,0 +1,9 @@
+{
+ "payment_profile": {
+  "customer_id": 7210437,
+  "bank_name": "Best Bank",
+  "bank_routing_number": "XXXXXXX1",
+  "bank_account_number": "XXXXXXX1",
+  "bank_account_type": "checking"
+  }
+}
