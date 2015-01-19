@@ -1,0 +1,1 @@
+dot -T png -o subscription_states.png subscription_states.dot
