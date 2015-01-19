@@ -11,3 +11,5 @@ The subscription_states.dot file describes the allowed transitions.
 To generate the subscription_states.png file:
 
 $ ./build.sh
+
+![Subscription States](https://github.com/wsmoak/chargify/blob/master/subscription-states/subscription_states.png)
