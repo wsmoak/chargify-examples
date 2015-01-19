@@ -2,8 +2,10 @@
  "payment_profile": {
   "customer_id": 7210437,
   "bank_name": "Best Bank",
-  "bank_routing_number": "XXXXXXX1",
-  "bank_account_number": "XXXXXXX1",
-  "bank_account_type": "checking"
+  "bank_routing_number": "021000089",
+  "bank_account_number": "111111111111",
+  "bank_account_type": "checking",
+  "bank_account_holder_type": "business",
+  "payment_type": "bank_account"
   }
 }
