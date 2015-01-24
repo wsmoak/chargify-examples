@@ -1,5 +1,7 @@
 digraph subscription_states {
  trialing -> active;
+ trialing -> trial_ended;
+ trial_ended -> canceled;
  active -> canceled;
  active -> past_due;
  active -> soft_failure;
@@ -9,10 +11,9 @@ digraph subscription_states {
  soft_failure -> canceled;
  past_due -> unpaid;
  past_due -> active;
+ past_due -> canceled;
  unpaid -> active;
  expired -> canceled;
  canceled -> active;
- trialing -> trial_ended;
- trial_ended -> canceled;
 }
 
