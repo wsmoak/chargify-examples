@@ -1,15 +1,10 @@
 <?php
 
-  require_once('./config.php');
+require_once('./config.php');
   
-  // see https://github.com/lewsid/chargify-webhook-helper/blob/master/example.php for example code
+// see https://github.com/lewsid/chargify-webhook-helper/blob/master/example.php for example code
 
-  $subdomain = $_POST['payload']['site']['subdomain'];
-  $subject = "Test Chargify Webhook";
-  $message = "Webhook " . $_POST["event"] . " received from " . $subdomain;
-  $headers = 'From: "Example App" <support@example.com>';
-      
-  mail($recipient,$subject,$message,$headers);
+$subdomain = $_POST['payload']['site']['subdomain'];
 
 if ($_POST["event"] == "signup_success")
 {
@@ -35,10 +30,6 @@ if ($_POST["event"] == "signup_success")
 
   curl_close($ch);
   
-  $subject = "Signup Success Chargify Webhook";
-  $message = $_POST["event"] . " from " . $subdomain . " -- billing date change result: " .$output;
-  $headers = 'From: "Example App" <support@example.com>';
-
-  mail($recipient,$subject,$message,$headers);
-  
 }
+
+?>
