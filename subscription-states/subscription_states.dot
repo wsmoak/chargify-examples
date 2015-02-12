@@ -1,19 +1,18 @@
 digraph subscription_states {
+ concentrate=true;
  trialing -> active;
  trialing -> trial_ended;
+ trialing -> canceled;
  trial_ended -> canceled;
  active -> canceled;
  active -> past_due;
- active -> soft_failure;
  active -> expired;
- soft_failure -> active;
- soft_failure -> past_due;
- soft_failure -> canceled;
  past_due -> unpaid;
  past_due -> active;
  past_due -> canceled;
  unpaid -> active;
  expired -> canceled;
  canceled -> active;
+ canceled -> trialing;
 }
 
