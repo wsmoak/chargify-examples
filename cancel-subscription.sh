@@ -14,3 +14,15 @@ export SUBSCRIPTION_ID=7473993
 
 # Un-cancel (and clear msg)
 #curl --verbose -u $CHARGIFY_API_KEY:x -H Accept:application/json -H Content-Type:application/json -X PUT -d @un-cancel.json https://$CHARGIFY_SUBDOMAIN.chargify.com/subscriptions/$SUBSCRIPTION_ID.json
+
+
+
+# Testing delayed cancel followed by cancel immediately
+
+# Cancel at End of Period
+curl --verbose -u $CHARGIFY_API_KEY:x -H Accept:application/json -H Content-Type:application/json -X PUT -d @cancel-later.json https://$CHARGIFY_SUBDOMAIN.chargify.com/subscriptions/$SUBSCRIPTION_ID.json
+
+# Cancel Immediately
+curl --verbose -u $CHARGIFY_API_KEY:x -H Accept:application/json -H Content-Type:application/json -X DELETE https://$CHARGIFY_SUBDOMAIN.chargify.com/subscriptions/$SUBSCRIPTION_ID.json
+
+# As of 20150217, results in subscription state of "Canceled (Pending Cancellation)" which should not happen
