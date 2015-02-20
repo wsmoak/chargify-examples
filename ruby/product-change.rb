@@ -24,7 +24,8 @@ puts subscription.product.handle
 
 #subscription.product_change('annual-plan')
 
-#subscription.delayed_product_change('monthly-plan')
+# schedule the product change for the next renewal
+#subscription.product_change('monthly-plan', true)
 
 #subscription.cancel_delayed_product_change
 
