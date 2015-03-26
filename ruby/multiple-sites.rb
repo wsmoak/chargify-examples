@@ -18,10 +18,12 @@ Chargify.configure do |c|
   c.api_key   = ENV['CHARGIFY_API_KEY']
 end
 
-# And read a different subscription
+# Read the same subscription from the original subdomain
 
 sub2 = subscription = Chargify::Subscription.find(7570777)
 puts sub2.id
+
+# And read a subscription from the new subdomain
 
 sub3 = subscription = Chargify::Subscription.find(7617516)
 puts sub3.id
