@@ -13,14 +13,23 @@ Chargify.configure do |c|
   c.api_key   = ENV['CHARGIFY_API_KEY']
 end
 
-subscriptions = Chargify::Subscription.find(:all, params: { per_page: 5, state: "active" } )
+page = 1
 
-puts subscriptions.count
+while true do
 
-subscriptions.each { |sub| 
-  curr_next_billing = sub.next_assessment_at
-  new_next_billing = Time.new curr_next_billing.year, curr_next_billing.month, curr_next_billing.day, 6, 0, 0, "-05:00"
-  sub.next_billing_at = new_next_billing
-  puts "id: #{sub.id} curr: #{curr_next_billing} new: #{new_next_billing}" 
-  sub.save
-}
+  subscriptions = Chargify::Subscription.find( :all, params: { per_page: 5, page: page, state: ["active","trialing"] } )
+
+  puts subscriptions.count
+  if subscriptions.count == 0 then break end
+
+  subscriptions.each { |sub|
+    curr_next_billing = sub.next_assessment_at
+    new_next_billing = Time.new curr_next_billing.year, curr_next_billing.month, curr_next_billing.day, 6, 0, 0, "-05:00"
+    sub.next_billing_at = new_next_billing
+    puts "id: #{sub.id} curr: #{curr_next_billing} new: #{new_next_billing}"
+    #sub.save
+  }
+
+  page = page + 1
+
+end
