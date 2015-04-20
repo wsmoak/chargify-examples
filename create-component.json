@@ -1,0 +1,12 @@
+{"metered_component":{
+          "name":"Text Messages API TEST 4",
+          "unit_name": "text message",
+          "taxable": false,
+          "allow_fractional_quantities": 1,
+          "pricing_scheme": "tiered",
+          "prices":[
+            {"starting_quantity":1, "ending_quantity": 99, "unit_price":1.0},
+            {"starting_quantity":100, "unit_price":0.5}
+          ]
+        }
+      }
