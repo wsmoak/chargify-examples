@@ -1,0 +1,8 @@
+{
+    "metafields": [
+      {"name": "Color",
+       "scope": {"csv": "1", "invoices": "1", "statements": "1"}
+      },
+      {"name": "Brand"}
+    ]
+  }
