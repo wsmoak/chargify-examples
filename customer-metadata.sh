@@ -1,5 +1,4 @@
-# Testing product change
-# https://docs.chargify.com/api-subscriptions
+# https://docs.chargify.com/api-metadata
 
 export CUSTOMER_ID=8146234
 
