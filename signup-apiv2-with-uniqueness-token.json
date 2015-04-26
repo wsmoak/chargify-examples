@@ -1,0 +1,34 @@
+{
+  "signup": {
+    "product": {
+      "handle": "pro"
+    },
+    "customer": {
+      "first_name": "CDTEST2",
+      "last_name": "Customer550",
+      "email": "wsmoak+cdtest2@chargify.com",
+      "organization": "Some Company",
+      "phone": "555-555-5555",
+      "address": "123 2nd Street",
+      "address_2": "Apt 5B",
+      "city": "New York",
+      "state": "NY",
+      "country": "US",
+      "zip": "10004"
+    },
+    "payment_profile": {
+      "first_name": "CDTEST2",
+      "last_name": "Customer550",
+      "card_number": "1",
+      "expiration_month": "02",
+      "expiration_year": "2022",
+      "billing_address": "123 2nd Street",
+      "billing_address_2": "Apt 5B",
+      "billing_city": "New York",
+      "billing_state": "NY",
+      "billing_country": "US",
+      "billing_zip": "10004"
+    }
+  },
+  "uniqueness_token": "abc-123-456-def-789"
+}
