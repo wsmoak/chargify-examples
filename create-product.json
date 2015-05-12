@@ -1,0 +1,11 @@
+{"product":{
+"name":"Basic Plan",
+"handle":"basic-plan",
+"description":"This is our basic plan.",
+"accounting_code":"123",
+"request_credit_card":true,
+"price_in_cents":1000,
+"interval":1,
+"interval_unit":"month",
+"auto_create_signup_page": true
+}}
