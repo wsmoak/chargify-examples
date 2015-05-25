@@ -1,0 +1,6 @@
+{"allocation":
+  {"memo":"Test allocation",
+   "quantity":5,
+   "proration_upgrade_scheme":
+   "prorate-attempt-capture"}
+}
