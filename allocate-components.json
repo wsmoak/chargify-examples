@@ -1,0 +1,7 @@
+{
+  "proration_upgrade_scheme":"full-price-attempt-capture",
+  "allocations":[
+    {"component_id":94811, "quantity": 5, "memo":"test"},
+    {"component_id":79453, "quantity": 10, "memo":"test"}
+  ]
+}
