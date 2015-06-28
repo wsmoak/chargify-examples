@@ -1,0 +1,7 @@
+{ "refund":
+    {
+      "amount": "12.43",
+      "memo": "External refund via API"
+    },
+  "external": 1
+}
