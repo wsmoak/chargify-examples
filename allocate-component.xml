@@ -1,0 +1,5 @@
+<allocation>
+  <memo>Test allocation in xml</memo>
+  <quantity>59</quantity>
+  <proration_upgrade_scheme>prorate-attempt-capture</proration_upgrade_scheme>
+</allocation>
