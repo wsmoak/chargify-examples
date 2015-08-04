@@ -1,0 +1,19 @@
+
+{"subscription":{
+  "product_handle":"monthly-plan",
+  "customer_attributes":{
+    "first_name":"Example",
+    "last_name":"Customer",
+    "email":"customer@example.com"
+    },
+    "credit_card_attributes":{
+      "first_name":"Example",
+      "last_name":"Customer",
+      "full_number":"4111111111111111",
+      "expiration_month":"10",
+      "expiration_year":"2020"
+    }
+  }
+}
+
+
