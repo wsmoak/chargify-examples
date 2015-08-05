@@ -1,11 +1,15 @@
 {"product":{
-"name":"Basic Plan",
-"handle":"basic-plan",
-"description":"This is our basic plan.",
+
+"handle":"basic-plan6",
+"name": "Basic Plan 6",
+"description":"This is our 6th basic plan.",
 "accounting_code":"123",
 "request_credit_card":true,
 "price_in_cents":1000,
 "interval":1,
 "interval_unit":"month",
-"auto_create_signup_page": true
+"auto_create_signup_page": true,
+"update_return_url": "http://example.com/callback/update",
+"return_url": "http://example.com/callback/signup",
+"return_params": "?ref={customer_reference}"
 }}
