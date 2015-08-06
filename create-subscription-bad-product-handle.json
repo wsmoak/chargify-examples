@@ -1,0 +1,15 @@
+
+{"subscription":{
+  "product_handle":" zero-dollar-product",
+  "customer_attributes":{
+    "first_name":"Test",
+    "last_name":"Customer",
+    "email":"customer@example.com"
+    },
+    "calendar_billing":{
+      "snap_day":1
+    }
+  }
+}
+
+
