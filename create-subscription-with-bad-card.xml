@@ -1,0 +1,16 @@
+<subscription>
+  <product_handle>test-product-a</product_handle>
+  <customer_attributes>
+    <first_name>Test159</first_name>
+    <last_name>Customer825</last_name>
+    <email>test159825@example.com</email>
+  </customer_attributes>
+  <credit_card_attributes>
+    <first_name>Test159</first_name>
+    <last_name>Customer825</last_name>
+    <card_number>3</card_number>
+    <cvv>123</cvv>
+    <expiration_month>08</expiration_month>
+    <expiration_year>2020</expiration_year>
+  </credit_card_attributes>
+</subscription>
