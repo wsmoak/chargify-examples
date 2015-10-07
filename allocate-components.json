@@ -1,7 +1,15 @@
 {
-  "proration_upgrade_scheme":"full-price-attempt-capture",
+  "proration_upgrade_scheme":"no-prorate",
   "allocations":[
-    {"component_id":94811, "quantity": 5, "memo":"test"},
-    {"component_id":79453, "quantity": 10, "memo":"test"}
+    {"component_id":76623,  "quantity": 17, "memo": "test"},
+    {"component_id":120661, "quantity": 0, "memo":"test"},
+    {"component_id":120662, "quantity": 0, "memo":"test"},
+    {"component_id":120663, "quantity": 0, "memo":"test"},
+    {"component_id":120664, "quantity": 0, "memo":"test"},
+    {"component_id":120665, "quantity": 0, "memo":"test"},
+    {"component_id":120666, "quantity": 0, "memo":"test"},
+    {"component_id":120667, "quantity": 0, "memo":"test"},
+    {"component_id":120668, "quantity": 0, "memo":"test"},
+    {"component_id":120669, "quantity": 0, "memo":"test"}
   ]
 }
