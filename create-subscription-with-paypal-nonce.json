@@ -1,0 +1,16 @@
+
+{"subscription":{
+  "product_handle":"test-product-b",
+  "customer_attributes":{
+    "first_name":"John",
+    "last_name":"Doe",
+    "email":"john.doe@example.com",
+    "organization":"Acme Widgets"
+  },
+  "paypal_account_attributes":{
+    "payment_method_nonce":"1ab2345c-6d7e-8f9a-0abc-12d345efa6bc",
+    "paypal_email":"john@example.com"
+  }
+}}
+
+
