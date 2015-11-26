@@ -1,6 +1,6 @@
 {"subscription":{
   "product_handle":"monthly-with-trial",
-  "next_billing_at":"2015-08-14T12:00:00-06:00",
+  "next_billing_at":"2016-08-14T12:00:00-06:00",
   "customer_attributes":{
     "first_name":"Test Imported2",
     "last_name":"Customer with Components",
