@@ -1,0 +1,20 @@
+<subscription>
+  <product_handle>monthly-plan</product_handle>
+  <customer_attributes>
+    <first_name>Example</first_name>
+    <last_name>Customer</last_name>
+    <email>customer@example.com</email>
+  </customer_attributes>
+  <credit_card_attributes>
+    <first_name>Example</first_name>
+    <last_name>Customer</last_name>
+    <full_number>4111111111111111</full_number>
+    <expiration_month>10</expiration_month>
+    <expiration_year>2020"</expiration_year>
+  </credit_card_attributes>
+  <metafields>
+      <color>blue</color>
+      <size>large</size>
+  </metafields>
+</subscription>
+
