@@ -18,6 +18,7 @@ CSV.foreach(File.open('import-test.csv'),{:headers=>:first_row}) do |line|
       },
     :product_handle => 'basic',
     :next_billing_at => line[4],
+    :coupon_code => line[7],
     :credit_card_attributes => {
       :vault_token => line[0],
       :current_vault => 'stripe',

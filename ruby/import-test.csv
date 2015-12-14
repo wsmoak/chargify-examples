@@ -1,2 +1,2 @@
 vault_token,email,first_name,last_name,next_billing,last_four,card_type,extra2,exp_month,exp_year,comp1,comp2
-cus_abc123def456,customer@example.com,Test,Customer,2016-12-31 11:42,4242,Visa,,12,2018,3,7
+cus_abc123def456,customer@example.com,Test,Customer,2016-12-31 11:42,4242,Visa,SUMMER15,12,2018,3,7
