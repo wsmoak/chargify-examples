@@ -9,7 +9,7 @@ end
 
 CSV.foreach(File.open('import-test.csv'),{headers: :first_row}) do |line|
 
-  puts "\n\n\nProcessing #{line}\n\n"
+  puts "\nProcessing #{line}"
 
   newsub = Chargify::Subscription.create(
     customer_attributes: {
@@ -35,7 +35,12 @@ CSV.foreach(File.open('import-test.csv'),{headers: :first_row}) do |line|
       {component_id: "82831", allocated_quantity: line[11]}
     ]
   )
-  puts newsub.inspect
+
+  if newsub.errors.any?
+    puts newsub.errors.messages
+  else
+    puts "Added #{newsub.id}"
+  end
 
 end
 
