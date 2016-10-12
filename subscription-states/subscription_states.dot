@@ -2,6 +2,7 @@ digraph subscription_states {
  concentrate=true;
  trialing -> active;
  trialing -> trial_ended;
+ trialing -> past_due;
  trialing -> canceled;
  trial_ended -> canceled;
  active -> canceled;
