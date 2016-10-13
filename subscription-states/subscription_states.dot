@@ -11,7 +11,7 @@ digraph subscription_states {
  past_due -> unpaid;
  past_due -> active;
  past_due -> canceled;
- unpaid -> active;
+ unpaid -> canceled;
  expired -> canceled;
  canceled -> active;
  canceled -> trialing;
