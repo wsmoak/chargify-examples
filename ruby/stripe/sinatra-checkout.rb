@@ -3,6 +3,7 @@
 # To start:  `ruby sinatra-checkout.rb` and visit http://localhost:4567
 #
 # References:
+# https://stripe.com/docs/checkout
 # https://stripe.com/docs/checkout/guides/sinatra
 # https://docs.chargify.com/api-subscriptions
 
@@ -26,11 +27,13 @@ end
 
 post '/charge' do
 
+  # "Checkout doesn't actually create charges—it only creates tokens. You can use those tokens to create the actual charge on your server. Or you can save the card for charging later," (which is what we're doing here.)
   customer = Stripe::Customer.create(
     :email => params[:stripeEmail],
     :card  => params[:stripeToken]
   )
 
+  # Now use the Stripe Customer ID as the Chargify `vault_token` to set up a recurring subscription that will be charged to the saved card.
   subscription = Chargify::Subscription.create(
     product_handle: 'monthly-plan',
     customer_attributes: {
