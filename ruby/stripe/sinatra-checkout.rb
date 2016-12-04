@@ -33,6 +33,8 @@ post '/charge' do
     :card  => params[:stripeToken]
   )
 
+  card = customer.cards.data[0]
+
   # Now use the Stripe Customer ID as the Chargify `vault_token` to set up a recurring subscription that will be charged to the saved card.
   subscription = Chargify::Subscription.create(
     product_handle: 'monthly-plan',
@@ -43,7 +45,13 @@ post '/charge' do
     },
     credit_card_attributes: {
       current_vault: 'stripe',
-      vault_token: customer.id
+      vault_token: customer.id,
+      first_name: "Valued",
+      last_name: "Customer",
+      card_type: card.brand.downcase,
+      last_four: card.last4,
+      expiration_month: card.exp_month,
+      expiration_year: card.exp_year
     }
   )
 
