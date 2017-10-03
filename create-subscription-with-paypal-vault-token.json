@@ -1,0 +1,17 @@
+{ "subscription": {
+    "product_handle":"test-product-b",
+    "customer_attributes": {
+      "first_name":"Amelia",
+      "last_name":"Johnson",
+      "email":"amelia@example.com",
+      "organization":"My Awesome Company"
+    },
+    "payment_profile_attributes":{
+      "paypal_email": "amelia@example.com",
+      "current_vault": "braintree_blue",
+      "vault_token":"58271347",
+      "payment_type":"paypal_account",
+      "payment_method_nonce": "ignored-but-must-be-present"
+    }
+  }
+}
