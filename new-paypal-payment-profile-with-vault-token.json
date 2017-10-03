@@ -1,0 +1,10 @@
+{ 
+  "payment_profile": {
+    "customer_id":"17332189",
+    "paypal_email": "jane@example.com",
+    "current_vault": "braintree_blue",
+    "vault_token":"111222333",
+    "payment_type":"paypal_account",
+    "payment_method_nonce": "ignored-but-must-be-present"
+  }
+}
