@@ -16,5 +16,6 @@ digraph subscription_states {
  expired -> canceled;
  canceled -> active;
  canceled -> trialing;
+ on_hold -> active;
 }
 
