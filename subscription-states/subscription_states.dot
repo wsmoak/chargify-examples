@@ -4,9 +4,9 @@ digraph subscription_states {
  trialing -> trial_ended;
  trialing -> past_due;
  trialing -> canceled;
- trialing > on_hold;
+ trialing -> on_hold;
  trial_ended -> canceled;
- trial_ended > active;
+ trial_ended -> active;
  active -> canceled;
  active -> past_due;
  active -> expired;
