@@ -8,9 +8,7 @@
     "organization":"Acme Widgets"
   },
   "paypal_account_attributes":{
-    "payment_method_nonce":"1ab2345c-6d7e-8f9a-0abc-12d345efa6bc",
+    "payment_method_nonce":"fake-paypal-billing-agreement-nonce",
     "paypal_email":"john@example.com"
   }
 }}
-
-
