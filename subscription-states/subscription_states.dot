@@ -21,5 +21,10 @@ digraph subscription_states {
  on_hold -> active;
  on_hold -> canceled;
  on_hold -> trialing;
+ awaiting_signup -> active;
+ awaiting_signup -> trialing;
+ awaiting_signup -> canceled;
+ awaiting_signup -> unpaid;
+ awaiting_signup -> past_due;
 }
 
